@@ -1,0 +1,48 @@
+﻿<-- this was an example file in windows 7 when I searched for *.bin in C:\XYZ_Incoming and saved the search from the dropdown -->
+<?xml version="1.0" encoding="UTF-8"?>
+<persistedQuery version="1.0">
+   <viewInfo iconSize="32" stackIconSize="0" displayName="Search Results in XYZ_Incoming" autoListFlags="0">
+      <visibleColumns>
+         <column viewField="System.ItemNameDisplay" />
+         <column viewField="System.DateModified" />
+         <column viewField="System.ItemTypeText" />
+         <column viewField="System.Size" />
+         <column viewField="System.ItemFolderPathDisplay" />
+      </visibleColumns>
+      <sortList>
+         <sort viewField="System.Search.Rank" direction="descending" />
+         <sort viewField="System.DateModified" direction="descending" />
+         <sort viewField="System.ItemNameDisplay" direction="ascending" />
+      </sortList>
+   </viewInfo>
+   <query>
+      <conditions>
+         <condition type="leafCondition" property="System.FileExtension" operator="starts with" propertyType="string" value=".bin" localeName="en-US">
+            <attributes>
+               <attribute attributeID="{9554087B-CEB6-45AB-99FF-50E8428E860D}" clsid="{C64B9B66-E53D-4C56-B9AE-FEDE4EE95DB1}" chs="1" sqro="585" timestamp_low="2509422630" timestamp_high="30259757">
+                  <condition type="leafCondition" property="System.FileExtension" operator="starts with" propertyType="string" value=".bin" localeName="en-US">
+                     <attributes>
+                        <attribute attributeID="{9554087B-CEB6-45AB-99FF-50E8428E860D}" clsid="{C64B9B66-E53D-4C56-B9AE-FEDE4EE95DB1}" chs="1" sqro="585" timestamp_low="2305812271" timestamp_high="30259757">
+                           <condition type="leafCondition" property="" operator="imp" propertyType="string" value="*.bin 0000 0000 0000 0001 0002 0003 N F" valuetype="System.StructuredQueryType.FilePath" localeName="en-US">
+                              <attributes>
+                                 <attribute attributeID="{9554087B-CEB6-45AB-99FF-50E8428E860D}" clsid="{C64B9B66-E53D-4C56-B9AE-FEDE4EE95DB1}" chs="0" parsedString="*.bin" localeName="en-US" timestamp_low="2305812271" timestamp_high="30259757" />
+                              </attributes>
+                           </condition>
+                        </attribute>
+                     </attributes>
+                  </condition>
+               </attribute>
+            </attributes>
+         </condition>
+      </conditions>
+      <kindList>
+         <kind name="item" />
+      </kindList>
+      <scope>
+         <include path="::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\C:\XYZ_Incoming" attributes="1887437183" />
+      </scope>
+   </query>
+   <properties>
+      <author Type="string">Vuono, Nicholas</author>
+   </properties>
+</persistedQuery>
